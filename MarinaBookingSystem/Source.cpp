@@ -1,9 +1,10 @@
 #include <iostream>
+#include "Control.h"
 
 using namespace std;
 
 int main()
 {
-	cout << "Hello World";
+	Control::startSystem();
 	return 0;
 }
