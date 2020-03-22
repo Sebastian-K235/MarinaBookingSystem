@@ -4,11 +4,23 @@
 
 using namespace std;
 
+int Control::choice;
+
 void Control::startSystem()
 {
 	//Local data
 
-	//Display menu
-	Display::showMainMenu();
-	//Get user input
+
+	//Program loop begins
+	do
+	{
+		system("CLS");
+		//Display menu
+		Display::showMainMenu();
+		//Get user input
+		cin>>choice;
+
+	} while (choice != 4);
+
+	
 }
