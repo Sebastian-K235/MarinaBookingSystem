@@ -11,5 +11,9 @@ protected:
 	float length;
 	string boatType;
 
+public:
+
+	void showBoat();
+
 };
 

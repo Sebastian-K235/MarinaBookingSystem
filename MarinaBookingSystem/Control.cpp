@@ -8,6 +8,7 @@ int Control::choice;
 
 void Control::startSystem()
 {
+	Data::Startup;
 	//Local data
 
 
