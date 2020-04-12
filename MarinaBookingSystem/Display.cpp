@@ -18,3 +18,15 @@ using namespace std;
 	cout << "Please choose an option (1-4)" << "\n";
 	cout << "and press Enter to confirm: ";
 }
+
+ void Display::invalidAction()
+ {
+	 system("CLS");
+	 cout << "Invalid action, please choose again..." << endl;
+     system("PAUSE");
+ }
+
+ void Display::displayRecords()
+ {
+
+ }

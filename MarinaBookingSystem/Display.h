@@ -9,5 +9,7 @@ private:
 public:
 	//Class Display public methods
 	static void showMainMenu();
+	static void invalidAction();
+	static void displayRecords();
 };
 

@@ -14,6 +14,7 @@ protected:
 public:
 
 	void showBoat();
+	Boat(string oN, string bN, float l, string bT);
 
 };
 
