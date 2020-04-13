@@ -56,6 +56,7 @@ void Control::startSystem()
 		Display::showMainMenu();
 		//Get user input
 		cin >> choice;
+		
 
 		switch (choice) {
 			case 1:
@@ -64,11 +65,13 @@ void Control::startSystem()
 			case 2:
 				break;
 			case 3:
+				Display::displayRecords();
 				break;
 			case 4:
 				break;
 			default:
 				Display::invalidAction();
+				break;
 	}
 
 	} while (choice != 4);

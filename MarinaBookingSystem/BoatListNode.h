@@ -7,7 +7,7 @@ private:
 	BoatListNode* next;
 public:
 	BoatListNode(Boat* boat);
-	Boat* getNode();
+	void getNode();
 	BoatListNode* getNext();
 	void setNext(BoatListNode* current);
 };

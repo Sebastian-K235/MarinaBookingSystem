@@ -10,5 +10,6 @@ public:
 	void static Startup();
 	void static InitDataStructures();
 	void static AddToMain(Boat* b);
+	static BoatList* returnMain();
 };
 

@@ -1,5 +1,6 @@
 #include "Display.h"
 #include <iostream>
+#include "Data.h"
 
 using namespace std;
 
@@ -28,5 +29,10 @@ using namespace std;
 
  void Display::displayRecords()
  {
-
+	 BoatList* currentList = Data::returnMain();
+	 BoatListNode* current = currentList->getStart();
+	 do {
+		 current->getNode();
+		 current = current->getNext();
+	 } while (current != NULL);
  }

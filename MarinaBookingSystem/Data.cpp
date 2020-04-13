@@ -19,3 +19,8 @@ void Data::AddToMain(Boat* b)
 {
 	mainBay.addNode(b);
 }
+
+BoatList* Data::returnMain()
+{
+	return &mainBay;
+}

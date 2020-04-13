@@ -19,3 +19,8 @@ void BoatList::addNode(Boat* b)
 	}
 	this->end = current;
 }
+
+BoatListNode* BoatList::getStart()
+{
+	return start;
+}
