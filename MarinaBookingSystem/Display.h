@@ -1,15 +1,10 @@
 #pragma once
-#include <iostream>;
 
 class Display
-{
-private:
-	//Class Display private attributes
-	
+{	
+
+//Methods
 public:
-	//Class Display public methods
 	static void showMainMenu();
-	static void invalidAction();
-	static void displayRecords();
 };
 

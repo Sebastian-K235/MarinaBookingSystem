@@ -138,23 +138,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Boat.cpp" />
-    <ClCompile Include="BoatList.cpp" />
-    <ClCompile Include="BoatListNode.cpp" />
     <ClCompile Include="Control.cpp" />
     <ClCompile Include="Data.cpp" />
     <ClCompile Include="Display.cpp" />
-    <ClCompile Include="FileConnector.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Boat.h" />
-    <ClInclude Include="BoatList.h" />
-    <ClInclude Include="BoatListNode.h" />
     <ClInclude Include="Control.h" />
     <ClInclude Include="Data.h" />
     <ClInclude Include="Display.h" />
-    <ClInclude Include="FileConnector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
