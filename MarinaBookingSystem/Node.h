@@ -16,7 +16,7 @@ public:
 
 	//Getters
 	Node*     getNext();
-	Booking*  getBooking();
+	Booking*  getData();
 
 	//Setters
 	void      setNext(Node* n);

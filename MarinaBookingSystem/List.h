@@ -9,6 +9,9 @@ private:
 	//Pointer to the end of the list
 	Node* end;
 
+	//Number of objects in the list
+	static int length;
+
 public:
 	//Constructor
 	List();
@@ -21,5 +24,8 @@ public:
 
 	//Display all bookings in the list
 	void showList();
+
+	//Return number of objects in the list
+	int getLength();
 };
 

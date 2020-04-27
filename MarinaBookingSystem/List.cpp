@@ -1,5 +1,7 @@
 #include "List.h"
 
+static int length = 0;
+
 List::List()
 {
 	start = NULL;
@@ -32,4 +34,20 @@ void List::add(Booking b)
 		end->setNext(n);
 		end = n;
 	}
+	length++;
+}
+
+void List::showList()
+{
+	Node* current = start;
+	while (current != NULL)
+	{
+		current->getData()->showBooking();
+		current = current->getNext();
+	}
+}
+
+int List::getLength()
+{
+	return length;
 }
