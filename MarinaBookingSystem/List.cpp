@@ -1,6 +1,6 @@
 #include "List.h"
 
-static int length = 0;
+int List::length = 0 ;
 
 List::List()
 {
