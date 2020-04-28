@@ -2,7 +2,6 @@
 class Control
 {
 public:
-
-	void menuSelection(char sel);
+	static void menuSelection(char sel);
 };
 

@@ -13,15 +13,15 @@ Booking::Booking()
 	std::cout << "Blank booking created" << std::endl;
 }
 
-Booking::Booking(float len,  float dra , int dur, float prc, std::string on, std::string bn, std::string bt )
+Booking::Booking(float LengthOfBoat,  float DraftHeight , int DurationOfStay, float PriceOfStay, std::string OwnersName, std::string BoatsName, std::string TypeOfBoat )
 {
-	boatLength = len;
-	draft = dra;
-	durationOfStay = dur;
-	price = prc;
-	ownerName = on;
-	boatName = bn;
-	typeOfBoat = bt;
+	boatLength = LengthOfBoat;
+	draft = DraftHeight;
+	durationOfStay = DurationOfStay;
+	price = PriceOfStay;
+	ownerName = OwnersName;
+	boatName = BoatsName;
+	typeOfBoat = TypeOfBoat;
 	std::cout << "Booking created"<< std::endl;
 }
 
@@ -32,5 +32,5 @@ Booking::~Booking()
 
 void Booking::showBooking()
 {
-	std::cout << "Boat name: " << boatName << " | Owner name: " << ownerName << std::endl;
+	std::cout << std::endl << "Boat name: " << this->boatName << " | Owner name: " << this->ownerName << std::endl;
 }

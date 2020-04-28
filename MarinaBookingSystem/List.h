@@ -20,7 +20,7 @@ public:
 	bool isEmpty();
 
 	//Add a new booking at the end of the list
-	void add(Booking b);
+	void add(Booking* b);
 
 	//Display all bookings in the list
 	void showList();

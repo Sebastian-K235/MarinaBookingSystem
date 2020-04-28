@@ -12,7 +12,7 @@ private:
 public:
 
 	//Constructor
-	Node(Booking b);
+	Node(Booking* b);
 
 	//Getters
 	Node*     getNext();

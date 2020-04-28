@@ -5,6 +5,8 @@ using namespace std;
 
  void Display::showMainMenu()
 {
+	 system("CLS");
+
 	cout << "+======Marina=Booking=System=v2.0======+" << "\n";
 	cout << "|                                      |" << "\n";
 	cout << "|     1. New booking                   |" << "\n";

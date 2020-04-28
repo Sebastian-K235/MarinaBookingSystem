@@ -1,8 +1,8 @@
 #include "Node.h"
 
-Node::Node(Booking b)
+Node::Node(Booking* b)
 {
-	booking = &b;
+	booking = b;
 	next = NULL;
 }
 

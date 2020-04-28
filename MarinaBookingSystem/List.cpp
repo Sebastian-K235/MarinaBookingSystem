@@ -1,4 +1,5 @@
 #include "List.h"
+#include <iostream>
 
 int List::length = 0 ;
 
@@ -20,8 +21,10 @@ bool List::isEmpty()
 	}
 }
 
-void List::add(Booking b)
+void List::add(Booking* b)
 {
+	
+
 	if (isEmpty())
 	{
 		Node* n = new Node(b);
@@ -39,6 +42,10 @@ void List::add(Booking b)
 
 void List::showList()
 {
+	if (start == NULL)
+	{
+		std::cout << "There are no bookings in the system" << std::endl << std::endl;
+	}
 	Node* current = start;
 	while (current != NULL)
 	{
