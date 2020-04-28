@@ -58,3 +58,41 @@ int List::getLength()
 {
 	return length;
 }
+
+void List::deleteByBoatName(std::string boatName)
+{
+	if (isEmpty())
+	{
+		std::cout << "The list is empty"<<std::endl;
+		system("Pause");
+		return;
+	}
+	if (start->getData()->getBoatName()==boatName)
+	{
+		Node* tempPointer = start->getNext();
+		delete start;
+		start = tempPointer;
+		std::cout << "Record deleted successfully" << std::endl;
+		system("Pause");
+		return;
+	}
+	else
+	{
+		Node* previous = start;
+		Node* current = start->getNext();
+		while (current != NULL)
+		{
+			if (current->getData()->getBoatName() == boatName)
+			{
+				previous->setNext(current->getNext());
+				delete current;
+				std::cout << "Record deleted successfully" << std::endl;
+				system("Pause");
+				return;
+			}
+			previous = current;
+			current = current->getNext();
+		}
+	}
+	std::cout << "Record not found"<<std::endl;
+}

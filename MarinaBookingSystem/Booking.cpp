@@ -34,3 +34,8 @@ void Booking::showBooking()
 {
 	std::cout << std::endl << "Boat name: " << this->boatName << " | Owner name: " << this->ownerName << std::endl;
 }
+
+std::string Booking::getBoatName()
+{
+	return boatName;
+}

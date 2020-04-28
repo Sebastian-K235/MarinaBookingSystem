@@ -25,7 +25,7 @@ void Data::addNewBooking()
 	//First check if there is sufficient space in the marina
 	if (bookingList.getLength() >= 50)
 	{
-		cout << "Insufficient space in the marina!" << endl;
+		cout << "Insufficient space in the marina! 50/50"<< endl;
 		system("pause");
 		return;
 	}
@@ -122,4 +122,12 @@ void Data::addNewBooking()
 
 	cout << endl << endl;
 	system("Pause");
+}
+void Data::removeBooking()
+{
+	std::string input;
+	system("CLS");
+	std::cout << "Enter the name of the boat for the booking you wish to delete: ";
+	std::cin >> input;
+	bookingList.deleteByBoatName(input);
 }

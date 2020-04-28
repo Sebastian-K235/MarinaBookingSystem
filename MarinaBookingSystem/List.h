@@ -22,6 +22,9 @@ public:
 	//Add a new booking at the end of the list
 	void add(Booking* b);
 
+	//Removing a booking by boat name
+	void deleteByBoatName(std::string boatName);
+
 	//Display all bookings in the list
 	void showList();
 

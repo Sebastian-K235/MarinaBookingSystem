@@ -19,6 +19,7 @@ public:
 	Booking();
 	Booking(float, float, int, float, std::string, std::string, std::string);
 	~Booking();
+	std::string getBoatName();
 	void showBooking();
 };
 

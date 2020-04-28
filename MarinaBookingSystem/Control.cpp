@@ -10,6 +10,7 @@ void Control::menuSelection(char sel)
 		Data::addNewBooking();
 		break;
 	case '2':
+		Data::removeBooking();
 		break;
 	case '3':
 		system("CLS");
