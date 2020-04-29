@@ -1,5 +1,6 @@
 #include "Control.h"
 #include "Data.h"
+#include "FileControl.h"
 
 void Control::menuSelection(char sel)
 {
@@ -18,6 +19,7 @@ void Control::menuSelection(char sel)
 		system("Pause");
 		break;
 	case '4':
+		FileControl::fileWrite();
 		break;
 	default:
 		break;

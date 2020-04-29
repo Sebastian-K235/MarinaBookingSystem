@@ -47,16 +47,25 @@ void List::showList()
 		std::cout << "There are no bookings in the system" << std::endl << std::endl;
 	}
 	Node* current = start;
+	int bookingNo = 1;
 	while (current != NULL)
 	{
+		std::cout << bookingNo;
 		current->getData()->showBooking();
 		current = current->getNext();
+		bookingNo++;
 	}
+	std::cout << std::endl;
 }
 
 int List::getLength()
 {
 	return length;
+}
+
+Node* List::getStart()
+{
+	return start;
 }
 
 void List::deleteByBoatName(std::string boatName)
@@ -95,4 +104,5 @@ void List::deleteByBoatName(std::string boatName)
 		}
 	}
 	std::cout << "Record not found"<<std::endl;
+	system("Pause");
 }

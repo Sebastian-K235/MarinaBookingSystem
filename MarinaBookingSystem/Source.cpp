@@ -2,12 +2,15 @@
 #include "Display.h"
 #include "Control.h"
 #include "Data.h"
+#include "FileControl.h"
 
 int main()
 {
 	//Variable storing user's selected option
 	std::string selection;
 
+
+	FileControl::fileRead();
 	do {
 		//system("CLS")
 		Display::showMainMenu();

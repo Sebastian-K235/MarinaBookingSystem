@@ -30,5 +30,7 @@ public:
 
 	//Return number of objects in the list
 	int getLength();
+
+	Node* getStart();
 };
 

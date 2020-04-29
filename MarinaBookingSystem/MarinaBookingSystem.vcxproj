@@ -142,6 +142,7 @@
     <ClCompile Include="Control.cpp" />
     <ClCompile Include="Data.cpp" />
     <ClCompile Include="Display.cpp" />
+    <ClCompile Include="FileControl.cpp" />
     <ClCompile Include="List.cpp" />
     <ClCompile Include="Node.cpp" />
     <ClCompile Include="Source.cpp" />
@@ -151,6 +152,7 @@
     <ClInclude Include="Control.h" />
     <ClInclude Include="Data.h" />
     <ClInclude Include="Display.h" />
+    <ClInclude Include="FileControl.h" />
     <ClInclude Include="List.h" />
     <ClInclude Include="Node.h" />
   </ItemGroup>

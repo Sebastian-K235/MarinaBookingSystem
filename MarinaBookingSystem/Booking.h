@@ -20,6 +20,12 @@ public:
 	Booking(float, float, int, float, std::string, std::string, std::string);
 	~Booking();
 	std::string getBoatName();
+	std::string getOwnerName();
+	std::string getBoatType();
+	float getLength();
+	float getDraft();
+	float getPrice();
+	int getDuration();
 	void showBooking();
 };
 

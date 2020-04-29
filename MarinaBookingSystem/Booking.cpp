@@ -35,7 +35,41 @@ void Booking::showBooking()
 	std::cout << std::endl << "Boat name: " << this->boatName << " | Owner name: " << this->ownerName << std::endl;
 }
 
+
+
 std::string Booking::getBoatName()
 {
 	return boatName;
+}
+
+std::string Booking::getOwnerName()
+{
+	return ownerName;
+}
+
+std::string Booking::getBoatType()
+{
+	return typeOfBoat;
+}
+
+float Booking::getLength()
+{
+	return boatLength;
+}
+
+float Booking::getDraft()
+{
+	return draft;
+
+}
+
+
+float Booking::getPrice()
+{
+	return price;
+}
+
+int Booking::getDuration()
+{
+	return durationOfStay;
 }
