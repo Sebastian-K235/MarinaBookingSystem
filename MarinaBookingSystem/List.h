@@ -25,6 +25,8 @@ public:
 	//Removing a booking by boat name
 	void deleteByBoatName(std::string boatName);
 
+	void showDetailedBooking(std::string boatName);
+
 	//Display all bookings in the list
 	void showList();
 

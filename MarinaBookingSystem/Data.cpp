@@ -131,3 +131,16 @@ void Data::removeBooking()
 	std::cin >> input;
 	bookingList.deleteByBoatName(input);
 }
+
+void Data::showBookingDetails()
+{
+	std::string input;
+	do
+	{
+		std::cout << "Type the boat name you want to see details of or type '-1' to exit: ";
+		std::cin >> input;
+		bookingList.showDetailedBooking(input);
+	} while (input != "-1");
+	
+}
+

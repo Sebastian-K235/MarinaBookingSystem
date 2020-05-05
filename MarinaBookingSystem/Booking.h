@@ -27,5 +27,6 @@ public:
 	float getPrice();
 	int getDuration();
 	void showBooking();
+	void showDetailedBooking();
 };
 

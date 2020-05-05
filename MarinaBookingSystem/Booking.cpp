@@ -35,6 +35,18 @@ void Booking::showBooking()
 	std::cout << "Boat name: " << this->boatName << " | Owner name: " << this->ownerName << std::endl;
 }
 
+void Booking::showDetailedBooking()
+{
+	using namespace std;
+	cout << "Boat name: " << this->boatName << endl;
+	cout << "Owner name: " << this->ownerName << endl;
+	cout << "Boat type: " << this->typeOfBoat << endl;
+	cout << "Boat length: " << this->boatLength << " m" << endl;
+	cout << "Draft: " << this->draft << " m" << endl;
+	cout << "Duration of stay: " << this->durationOfStay <<" months"<< endl;
+	cout << "Price: " << this->price << " GBP" << endl;
+}
+
 
 
 std::string Booking::getBoatName()
