@@ -32,7 +32,7 @@ Booking::~Booking()
 
 void Booking::showBooking()
 {
-	std::cout << std::endl << "Boat name: " << this->boatName << " | Owner name: " << this->ownerName << std::endl;
+	std::cout << "Boat name: " << this->boatName << " | Owner name: " << this->ownerName << std::endl;
 }
 
 

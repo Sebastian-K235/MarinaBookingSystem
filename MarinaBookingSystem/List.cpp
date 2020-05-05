@@ -50,7 +50,7 @@ void List::showList()
 	int bookingNo = 1;
 	while (current != NULL)
 	{
-		std::cout << bookingNo;
+		std::cout << bookingNo << ". ";
 		current->getData()->showBooking();
 		current = current->getNext();
 		bookingNo++;
