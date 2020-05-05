@@ -106,3 +106,31 @@ void List::deleteByBoatName(std::string boatName)
 	std::cout << "Record not found"<<std::endl;
 	system("Pause");
 }
+
+void List::showDetailedBooking(std::string boatName)
+{
+	if (isEmpty())
+	{
+		std::cout << "The list is empty" << std::endl;
+		system("Pause");
+		return;
+	}
+	if (start->getData()->getBoatName() == boatName)
+	{
+		start->getData()->showDetailedBooking();
+	}
+	else
+	{
+		Node* current = start->getNext();
+		while (current != NULL)
+		{
+			if (current->getData()->getBoatName() == boatName)
+			{
+				current->getData()->showDetailedBooking();
+				return;
+			}
+			current = current->getNext();
+		}
+	}
+	system("Pause");
+}

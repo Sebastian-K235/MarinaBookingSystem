@@ -1,6 +1,8 @@
 #include "Control.h"
 #include "Data.h"
 #include "FileControl.h"
+#include <iostream>
+#include "Display.h"
 
 void Control::menuSelection(char sel)
 {
@@ -16,7 +18,7 @@ void Control::menuSelection(char sel)
 	case '3':
 		system("CLS");
 		Data::bookingList.showList();
-		system("Pause");
+		Data::showBookingDetails();
 		break;
 	case '4':
 		FileControl::fileWrite();
